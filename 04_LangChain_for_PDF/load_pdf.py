@@ -94,7 +94,7 @@ def load_all_pdfs(directory):
         {pages[0].page_content}
         """
 
-        result = llm([HumanMessage(content=prompt)])
+        result = llm.invoke([HumanMessage(content=prompt)])
 
         contents.append(extract_and_parse_json(result.content))
 
