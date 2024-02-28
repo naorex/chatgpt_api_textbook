@@ -48,7 +48,7 @@ def draw_graph(filename):
     ax.get_yaxis().set_major_formatter(FuncFormatter(lambda x, p: format(int(x), ",")))
 
     plt.tight_layout()
-    plt.show()
+    plt.savefig('graph.png')
 
 
 def main():
